@@ -1,0 +1,75 @@
+.Footers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /*3 columns, each taking 1 fraction of the space */
+    gap: 16px;   /*space between grid items */
+  } 
+
+  .grid-item {
+   /* background-color: lightblue;*/
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .heading{
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  header {
+   /* background-color: #4CAF50;*/
+    color: black;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: flex-end;  /* Move to the right side of the window */
+  }
+  
+  .nav-list {
+    display: flex;
+    flex-direction: row-reverse;  /* Reverse the order of items */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-item {
+    margin: 0 15px;  /* Space between items */
+    font-size: 18px;
+    color: black;
+    cursor: pointer;
+    text-decoration: underline;  /* Remove underline by default */
+  }
+  
+  footer {
+   /* background-color: #333;*/
+    color: black;
+    padding: 10px;
+    text-align: center;
+    list-style-type: none;
+    margin-top: auto;  /* This ensures the footer sticks to the bottom */
+  }
+
+  .lists{
+    list-style: none;
+  }
+  
+  main {
+    flex-grow: 1;
+    padding: 20px;
+    align-content: center;
+    text-align: center;
+    margin-top: -60px;
+    font-size: large;
+  }
+  
+  
